@@ -1,16 +1,16 @@
 <script setup>
-
+  import LlistaProductos from './components/ListaProductos.vue'
+  import SelectorDivisa from './components/SelectorDivisia.vue'
 </script>
 
 <template>
-  <header>
+  <div>
+    
+    <SelectorDivisa/>
 
-    <div class="wrapper">
+    <LlistaProductos/>
 
-      <p>pip</p>
-    </div>
-  </header>
-
+  </div>
 </template>
 
 <style scoped>
