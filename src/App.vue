@@ -1,14 +1,15 @@
 <script setup>
-  import LlistaProductos from './components/ListaProductos.vue'
+  import { ref } from 'vue'
   import SelectorDivisa from './components/SelectorDivisia.vue'
+
+  let titulo = ref("")
 </script>
 
 <template>
   <div>
-    
+    <h1>{{ titulo }}</h1>
+    <input type="text" v-model="titulo">
     <SelectorDivisa/>
-
-    <LlistaProductos/>
 
   </div>
 </template>
