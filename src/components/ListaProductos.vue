@@ -76,7 +76,7 @@ article{
 
 button{
     border-radius: 7px;
-    border:0px;
+    border:0.3px solid white;
     background-color: rgb(111, 200, 248) ;
     transition: 0.4s;
 }
