@@ -11,14 +11,14 @@
 
 <template>
     <div>
-        
+        <LlistaProductos/>
+
         <select v-model="moneda">
           <option value="$">Dolares ($)</option>
           <option value="€">Euros (€)</option>
         </select>
         <!--<p>Moneda seleccionada: {{ moneda }}</p>-->
 
-        <LlistaProductos/>
 
     </div>
 </template>

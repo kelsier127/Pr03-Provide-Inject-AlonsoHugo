@@ -44,16 +44,37 @@
 </script>
 
 <template>
-    <div>
+    <div id="contenedorLista">
         <section>
             <h3>Articles a la venda:</h3>
-            <article>
-                <p v-for="item in arrayProductes" :key="item"> {{ item.name }} - {{ item.price }}{{ pepin }} - <button @click="afegirCarret(item.name,item.price)">Afegir al carret</button></p>
+            <article v-for="item in arrayProductes" :key="item">
+                <div id="divProducto">
+                    <p> {{ item.name }} </p> 
+                    <p>{{ item.price }}{{ pepin }}</p> 
+                </div>
+            
+                <button @click="afegirCarret(item.name,item.price)">Afegir al carret</button>
             </article>
         </section>
     </div>
 </template>
 
 <style scoped>
+article{
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding:10px;
+    background-color: aliceblue;
+}
 
+#divProducto{
+    display: flex;
+}
+
+#contenedorLista{
+    padding: 15px;
+    background-color: rgb(165, 200, 230);
+    border-radius: 10px;
+}
 </style>
