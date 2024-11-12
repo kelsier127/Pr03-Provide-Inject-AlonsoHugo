@@ -85,6 +85,10 @@ button:hover{
     background-color: rgb(87, 170, 235) ;
 }
 
+button:active{
+    background-color: rgb(0, 129, 228) ;
+}
+
 #contenedorLista{
     padding: 15px;
     background-color: rgb(165, 200, 230);
