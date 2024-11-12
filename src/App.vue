@@ -15,6 +15,16 @@
 </template>
 
 <style scoped>
+div{
+  display: grid;
+  justify-content: center;
+}
+
+input{
+  border-radius: 5px;
+  border: 0.2px solid;
+  margin: 10px;
+}
 
 header {
   line-height: 1.5;

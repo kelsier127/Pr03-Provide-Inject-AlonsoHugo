@@ -2,7 +2,6 @@
     import { provide, ref } from 'vue'
     import LlistaProductos from './ListaProductos.vue'
 
-    let pepin="hola"
 
     let moneda = ref("$")
 
@@ -24,5 +23,9 @@
 </template>
 
 <style scoped>
-
+select{
+    border-radius: 5px;
+    border: 0.2px solid;
+    margin: 10px;
+}
 </style>

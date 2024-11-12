@@ -35,17 +35,18 @@
     }
 
     function afegirCarret(nom, preu){
-        let articulo={
-            name: nom, price: preu
-        }
+        let articulo=` ${nom} - ${preu}${pepin.value}`
         arrayCarrito.push(articulo)
         console.log(arrayCarrito)
+    }
+
+    function mostrarCarret(){
+        window.alert(`Pepín, has comprado: ${arrayCarrito.toString()}`)
     }
 </script>
 
 <template>
-    <div id="contenedorLista">
-        <section>
+        <section id="contenedorLista">
             <h3>Articles a la venda:</h3>
             <article v-for="item in arrayProductes" :key="item">
                 <div id="divProducto">
@@ -55,8 +56,9 @@
             
                 <button @click="afegirCarret(item.name,item.price)">Afegir al carret</button>
             </article>
+            <button @click="mostrarCarret">Qué he comprado?</button>
+
         </section>
-    </div>
 </template>
 
 <style scoped>
@@ -72,9 +74,24 @@ article{
     display: flex;
 }
 
+button{
+    border-radius: 7px;
+    border:0px;
+    background-color: rgb(111, 200, 248) ;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: rgb(87, 170, 235) ;
+}
+
 #contenedorLista{
     padding: 15px;
     background-color: rgb(165, 200, 230);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
 }
 </style>
